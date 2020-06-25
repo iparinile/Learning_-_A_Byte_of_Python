@@ -27,7 +27,6 @@ if not os.path.exists(today):
 
 # 5. Используем команду "zip" для помещения файлов в zip-архив
 zip_command = "zip -qr {0} {1}".format(target, ' '.join(source))
-print(zip_command)
 # Запускаем создание резервной копии
 if os.system(zip_command) == 0:
     print('Резервная копия успешно создана в', target)
